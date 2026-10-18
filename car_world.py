@@ -1,16 +1,7 @@
-"""Reference path, obstacles, and bicycle-model vehicle."""
+"""Reference path and bicycle-model vehicle."""
 
 import math
 import numpy as np
-
-OBSTACLES = [
-    (2, 5, 8, 12),
-    (12, -14, 20, -6),
-    (22, -14, 30, -6),
-    (18, 2, 28, 10),
-    (32, 8, 40, 18),
-    (38, -12, 48, -4),
-]
 
 
 def reference_path(num=220):

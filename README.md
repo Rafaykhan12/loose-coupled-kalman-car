@@ -1,7 +1,5 @@
 # Loose-Coupled Kalman Filter — Car Trajectory Following
 
-**Author & maintainer:** Muhammad Rafay ([Rafaykhan12](https://github.com/Rafaykhan12))
-
 Educational **Python simulation**: a car follows a reference path while a **loose-coupled Kalman filter (LCKF)** estimates position by fusing **IMU** (high rate) and **GPS** (low rate).
 
 **Filter core forked from:** [Bee1997/LooseCoupled-KalmanFilter](https://github.com/Bee1997/LooseCoupled-KalmanFilter) (MIT). This repo adds the **car model**, **path following**, and **live plot**.

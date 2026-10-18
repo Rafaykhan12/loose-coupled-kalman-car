@@ -3,10 +3,9 @@
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.patches import Polygon, Ellipse, Rectangle
+from matplotlib.patches import Polygon, Ellipse
 
 import lckf_config as cfg
-from car_world import OBSTACLES
 
 
 def _car_body_xy(x, y, psi):
@@ -39,9 +38,6 @@ def animate_simulation(path_x, path_y, history, car, interval_ms=50):
     ax.set_ylabel("Y [m]")
     ax.set_xlim(-5, 55)
     ax.set_ylim(-20, 25)
-
-    for x0, y0, x1, y1 in OBSTACLES:
-        ax.add_patch(Rectangle((x0, y0), x1 - x0, y1 - y0, fill=False, ec="k", lw=1.5, zorder=1))
 
     ax.plot(path_x, path_y, "r.", markersize=4, label="Reference path", zorder=2)
     imu_line, = ax.plot([], [], color="#e67e22", linewidth=1.2, label="IMU (dead reckoning)", zorder=3)
