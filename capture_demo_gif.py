@@ -11,7 +11,7 @@ from car_visualization import animate_simulation
 
 
 def main():
-    out = Path(__file__).resolve().parent / "docs" / "demo.gif"
+    out = Path(__file__).resolve().parent / "docs" / "lckf_car_demo.gif"
     out.parent.mkdir(parents=True, exist_ok=True)
 
     path_x, path_y, history, car = run_simulation(duration_s=6.0)

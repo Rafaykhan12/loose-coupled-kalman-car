@@ -6,7 +6,7 @@ Educational **Python simulation**: a car follows a reference path while a **loos
 
 ## Demo
 
-![LCKF car simulation — GPS, IMU, predict, and fused output](docs/demo.gif)
+![LCKF car simulation — GPS, IMU, predict, and fused output](docs/lckf_car_demo.gif)
 
 ## In short
 
@@ -50,7 +50,7 @@ Tuning: `lckf_config.py` — `FS_IMU`, `FS_GPS`, `Q`, `R`, `GPS_MEAS_STD`.
 | File | Role |
 |------|------|
 | `main.py` | Entry point |
-| `capture_demo_gif.py` | Regenerate `docs/demo.gif` for the README |
+| `capture_demo_gif.py` | Regenerate `docs/lckf_car_demo.gif` for the README |
 | `KalmanFilter.py` | LCKF (adapted from Bee1997) |
 | `car_lckf_sim.py` | Simulation loop |
 | `car_world.py` | Reference path, car model, pure pursuit |
